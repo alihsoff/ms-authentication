@@ -13,7 +13,7 @@ spring:
     username: postgres
     password: test
   jpa:
-    database: mysql
+    database: postgresql
     hibernate:
       ddl-auto: validate
   liquibase:
