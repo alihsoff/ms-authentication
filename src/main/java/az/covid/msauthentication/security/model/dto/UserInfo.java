@@ -15,4 +15,5 @@ public class UserInfo {
     private String status;
     private String userId;
     private String email;
+    private Integer countryId;
 }

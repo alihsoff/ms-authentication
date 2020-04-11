@@ -34,6 +34,7 @@ public class TokenUtil {
         String email = getClaimFromToken(token, Claims::getSubject);
         String role = getAllClaimsFromToken(token).get("role").toString();
         String status = getAllClaimsFromToken(token).get("status").toString();
+        Integer countryId = (Integer) getAllClaimsFromToken(token).get("countryId");
         logger.info("UtilLog.GetUserInfoFromToken.Stop.Success");
         return UserInfo
                 .builder()
@@ -42,6 +43,7 @@ public class TokenUtil {
                 .status(status)
                 .userId(userId)
                 .email(email)
+                .countryId(countryId)
                 .build();
     }
 
@@ -60,12 +62,13 @@ public class TokenUtil {
                 .getBody();
     }
 
-    public String generateToken(String username, String userId, String role, String status) {
+    public String generateToken(String username, String userId, String role, String status, Integer countryId) {
         logger.info("UtilLog.GenerateToken.Start");
         Map<String, Object> claims = new HashMap<>();
         claims.put("userId", userId);
         claims.put("role", role);
         claims.put("status", status);
+        claims.put("countryId", countryId);
         logger.info("UtilLog.GenerateToken.Stop.Success");
         return doGenerateToken(claims, username, userId);
     }

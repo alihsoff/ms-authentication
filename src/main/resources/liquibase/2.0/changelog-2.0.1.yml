@@ -36,6 +36,9 @@ databaseChangeLog:
                   name: organization_name
                   value: Medical Plaza
               - column:
+                  name: country_id
+                  value: 1
+              - column:
                   name: organization_type
                   value: CLINIC
             tableName: users

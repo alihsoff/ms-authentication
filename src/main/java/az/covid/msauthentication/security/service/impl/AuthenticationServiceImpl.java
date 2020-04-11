@@ -43,7 +43,8 @@ public class AuthenticationServiceImpl implements AuthenticationService {
             String userId = userEntity.getId().toString();
             String role = userEntity.getRole().toString();
             String status = userEntity.getStatus().toString();
-            String token = tokenUtil.generateToken(request.getEmail(), userId, role, status);
+            Integer countryId = userEntity.getCountryId();
+            String token = tokenUtil.generateToken(request.getEmail(), userId, role, status, countryId);
 
             logger.info("ActionLog.CreateAuthenticationToken.Stop.Success");
             return new JwtAuthenticationResponse(token);

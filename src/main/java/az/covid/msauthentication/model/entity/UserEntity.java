@@ -56,6 +56,9 @@ public class UserEntity {
     @Column(name = "organization_type")
     private String organizationType;
 
+    @Column(name = "country_id")
+    private Integer countryId;
+
     @Column(name = "created_at")
     @CreationTimestamp
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")

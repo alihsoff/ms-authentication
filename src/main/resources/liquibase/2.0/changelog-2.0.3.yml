@@ -38,5 +38,8 @@ databaseChangeLog:
               - column:
                   name: organization_type
                   value: CLINIC
+              - column:
+                  name: country_id
+                  value: 1
             tableName: users
             remarks: insert mock user in users

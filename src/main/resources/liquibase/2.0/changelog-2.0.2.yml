@@ -34,7 +34,10 @@ databaseChangeLog:
                   value: lamanguliyeva@outlook.com
               - column:
                   name: organization_name
-                  value: Medical Plaza
+                  value: Moscow City Hospital
+              - column:
+                  name: country_id
+                  value: 2
               - column:
                   name: organization_type
                   value: CLINIC
