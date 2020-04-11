@@ -32,5 +32,11 @@ databaseChangeLog:
               - column:
                   name: username
                   value: lamanguliyeva@outlook.com
+              - column:
+                  name: organization_name
+                  value: Medical Plaza
+              - column:
+                  name: organization_type
+                  value: CLINIC
             tableName: users
             remarks: insert mock admin user in users
