@@ -8,7 +8,7 @@ logging:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    platform: mysql
+    platform: postgresql
     url: jdbc:postgresql://localhost:5432/auth
     username: postgres
     password: test
