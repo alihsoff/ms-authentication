@@ -50,6 +50,12 @@ public class UserEntity {
     @Enumerated(EnumType.STRING)
     private Status status;
 
+    @Column(name = "organization_name")
+    private String organizationName;
+
+    @Column(name = "organization_type")
+    private String organizationType;
+
     @Column(name = "created_at")
     @CreationTimestamp
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
