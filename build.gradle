@@ -6,7 +6,7 @@ plugins {
 
 apply plugin: "groovy"
 
-group = 'az.gdg'
+group = 'az.covid'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
