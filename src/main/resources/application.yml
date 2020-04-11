@@ -12,14 +12,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/auth
     username: postgres
     password: test
-  rabbitmq:
-    addresses: xxx
-  cloud:
-    stream:
-      bindings:
-        output:
-          destination: mail
-          group: mail-group
   jpa:
     database: mysql
     hibernate:
